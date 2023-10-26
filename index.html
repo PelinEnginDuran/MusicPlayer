@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="music-player">
+        <button id="playlist">
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <img src="/contents/nancy.jpg" alt="" id="song-image">
+        <div class="song-details">
+            <p id="song-name">Bang Bang</p>
+            <p id="song-artist">Nancy Sinatra</p>
+        </div>
+        <div class="player-options">
+            <button id="shuffle">
+                <i class="fa-solid fa-shuffle"></i>
+
+            </button>
+            <button id="backward">
+                <i class="fa-solid fa-backward-step"></i>
+                
+            </button>
+            <button id="play">
+                <i class="fa-solid fa-play"></i>
+                
+            </button>
+            <button id="pause">
+                <i class="fa-solid fa-pause"></i>
+                
+            </button>
+            <button id="forward">
+                <i class="fa-solid fa-forward-step"></i>
+                
+                
+            </button>
+            <button id="repeat">
+                <i class="fa-solid fa-repeat"></i>
+                
+            </button>
+        </div>
+        <audio id="audio" preload="metadata"></audio>
+        <div id="progress-bar">
+            <div id="current-progress"></div>
+        </div>
+
+        <div class="time-container">
+            <span id="current-time">01.23</span>
+            <span id="max-duration">04.21</span>
+        </div>
+
+        <div id="playlist-container">
+            <button id="close-button">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul id="playlist-songs"></ul>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
